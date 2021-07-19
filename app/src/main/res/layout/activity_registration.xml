@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        app:cardElevation="8dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:focusable="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="20dp"
+    android:focusableInTouchMode="true"
+    android:id="@+id/registrationLayout"
+    android:background="@color/white">
+<!--    tools:context=".Activity.RegistrationActivity">-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/simonetta_regular"
+        android:text="@string/UserRegistration"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|normal" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="left"-->
+<!--        android:fontFamily="@font/simonetta_black"-->
+<!--        android:text="@string/UserRegistration"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold|normal" />-->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="left"
+        android:background="@color/green"/>
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/list_background"
+        android:hint="Choose Your Option" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mandiLicense"
+            android:fontFamily="@font/simonetta_regular"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/black" />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO  "
+            android:fontFamily="@font/simonetta_regular"
+            android:textSize="18sp"
+            android:textOff="NO"
+            android:textOn="YES"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:fontFamily="@font/simonetta_regular"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/list_background"
+            android:hint="Choose Your Option" />
+    <Spinner
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/list_background"
+        android:hint="Choose Your Option" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/simonetta_regular"
+        app:prefixText="+91"
+        app:startIconDrawable="@drawable/phone_icon"
+        app:prefixTextColor="@color/green"
+        android:hint="@string/whatsAppNoHint"
+        app:boxStrokeColor="@color/green"
+        app:hintTextColor="@color/green">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobileNo_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/simonetta_regular"
+            android:ems="10"
+            android:maxLength="10"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/simonetta_black"
+        android:text="CONTINUE"
+        android:background="@drawable/button_round_shape"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/simonetta_regular"
+        android:textStyle="bold"
+        android:text="@string/alreadyAccount"/>
+    <TextView
+        android:id="@+id/gotoSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/green"
+        android:fontFamily="@font/simonetta_regular"
+        android:text="@string/signIn"/>
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

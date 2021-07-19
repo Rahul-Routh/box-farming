@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Box Farming</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="LoginEmailAddress">Mobile No</string>
+    <string name="OtpEnter">OTP</string>
+    <string name="map_key">AIzaSyAyE6mBzX59BBi3UU21WJ-3TPYnp-3fiEk</string>
+
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="gallery">Gallery</string>
+    <string name="favourite">Favourite</string>
+    <string name="profile">Profile</string>
+    <string name="vegetable">Vegetable</string>
+
+    <string name="traderName">TRADER NAME</string>
+    <string name="cropName">Crop Name</string>
+    <string name="cropNameItem">Tomato</string>
+    <string name="variety">Variety</string>
+    <string name="varietyItem">Red Beefsteak - Desi</string>
+    <string name="totalQuantity">Total Quantity</string>
+    <string name="totalQuantityItem">80 Ton</string>
+    <string name="rate">Rate</string>
+    <string name="rateItem">240 Per/Ton</string>
+    <string name="expectedDate">Expected Date</string>
+    <string name="expectedDateItem">August 2020</string>
+    <string name="imageGallery">Image Gallery</string>
+    <string name="traceability">Traceability</string>
+    <string name="interested">Interested</string>
+    <string name="demandQuantity">Demand Quantity</string>
+    <string name="enterQuantity">Enter Quantity</string>
+    <string name="farmerName">Farmer Name</string>
+    <string name="demandDate">Demand Date</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="enterMobileNoTop">ENTER YOUR MOBILE NO.</string>
+
+    <string name="mobileNo">Mobile No.</string>
+    <string name="mobileNoHint">Enter Your Mobile No</string>
+    <string name="otp">OTP</string>
+    <string name="otpHint">Enter the OTP</string>
+    <string name="GetOTPButton">GET OTP</string>
+    <string name="continueButton">CONTINUE</string>
+
+    <string name="UserRegistration">USER REGISTRATION</string>
+
+    <string name="selectCategory">Select Category</string>
+    <string name="mandiLicense">Mandi License</string>
+    <string name="state">state</string>
+    <string name="stateHint">Enter State</string>
+    <string name="district">District</string>
+    <string name="districtHint">Enter District</string>
+    <string name="whatsAppNo">WhatsApp No</string>
+    <string name="whatsAppNoHint">Enter WhatsApps No.</string>
+    <string name="newAccount">Do not have and account? </string>
+    <string name="alreadyAccount">Already have and account !!</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Sign In</string>
+    <string name="invalid_mobile">Please Enter a Valid Mobile Number</string>
+
+
+    <string-array name="category">
+        <item>Choose Your category"</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+        <item>Category 6</item>
+        <item>Category 7</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>Choose Your State"</item>
+        <item>state 1</item>
+        <item>state 2</item>
+        <item>state 3</item>
+        <item>state 4</item>
+        <item>state 5</item>
+        <item>state 6</item>
+        <item>state 7</item>
+    </string-array>
+    <string-array name="district">
+        <item>Choose Your District"</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+        <item>Category 6</item>
+        <item>Category 7</item>
+    </string-array>
+
+</resources>

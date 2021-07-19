@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.LoginActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        app:cardElevation="8dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_icon"
+            android:layout_marginBottom="40dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/simonetta_regular"
+            app:prefixText="+91"
+            app:startIconDrawable="@drawable/phone_icon"
+            app:prefixTextColor="@color/green"
+            android:hint="@string/mobileNoHint"
+            app:boxStrokeColor="@color/green"
+            app:hintTextColor="@color/green">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobileNo_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/simonetta_regular"
+                android:ems="10"
+                android:maxLength="10"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/otpHint"
+            android:fontFamily="@font/simonetta_regular"
+            app:boxStrokeColor="@color/green"
+            app:hintTextColor="@color/green">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otp_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/simonetta_regular"
+                android:inputType="number"
+                android:ems="10"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/simonetta_black"
+            android:textStyle="bold|normal"
+            android:text="@string/continueButton"
+            android:background="@drawable/button_round_shape"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/simonetta_regular"
+            android:textStyle="bold"
+            android:text="@string/newAccount"/>
+        <TextView
+            android:id="@+id/gotoSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/simonetta_regular"
+            android:text="@string/signUp"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/mobileNoHint"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:maxLength="10"-->
+<!--        android:inputType="phone"-->
+<!--        android:background="@drawable/textfield_background"/>-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/otpHint"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:inputType="number"-->
+<!--        android:ems="10"-->
+<!--        android:background="@drawable/textfield_background"/>-->
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/white"
+        android:layout_marginTop="80dp"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
